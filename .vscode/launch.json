@@ -1,0 +1,41 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "调试 Hello World",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/01_Hello_World/hello_cuda.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/01_Hello_World",
+            "environment": [],
+            "console": "externalTerminal",
+            "preLaunchTask": "编译 Hello World"
+        },
+        {
+            "name": "调试 Vector Addition",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/02_Vector_Addition/vector_add.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/02_Vector_Addition",
+            "environment": [],
+            "console": "externalTerminal",
+            "preLaunchTask": "编译 Vector Addition"
+        },
+        {
+            "name": "调试当前CUDA程序",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "console": "externalTerminal",
+            "preLaunchTask": "编译当前CUDA文件"
+        }
+    ]
+} 
